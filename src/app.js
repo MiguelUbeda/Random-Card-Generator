@@ -19,12 +19,15 @@ window.onload = function() {
   let texto = document.querySelector("p");
   let boton = document.querySelector("button");
 
+  console.log(palo);
   boton.addEventListener("click", () => {
+    //Cambiarlo por for OF (NO FUNCIONABA)
     for (let i = 0; i < palo.length; i++) {
-      //HAY QUE REMOVER ANTES DE AÑADIR
+      palo[i].removeAttribute("class"); //NO REMUEVE, NO FUNCIONA
       palo[i].classList.add("fa-solid", palosArray[randomPalos]);
     }
-    //HAY QUE REMOVER ANTES DE AÑADIR
     texto.innerHTML = randomNumber;
+    console.log(randomNumber);
+    //SIEMPRE SALE EL MISMO NÚMERO
   });
 };
