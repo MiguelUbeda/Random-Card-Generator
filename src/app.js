@@ -6,8 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-
+  
   const heart = "fa-heart";
   const spade = "fa-sun";
   const club = "fa-moon";
